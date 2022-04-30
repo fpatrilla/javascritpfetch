@@ -1,7 +1,7 @@
 import { actualizarCarrito } from "./carrito/actualizarCarrito.js";
 import { mostrarProductos } from "./App.js";
 import { eliminarProductoCarrito } from "./carrito/carritoIndex.js";
-import { prodCafe } from "./stock/stockCafe.js";
+
 
 
 const contenedorCarrito = document.getElementById('carrito-contenedor');
@@ -9,7 +9,7 @@ let carritoStorage = [];
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    mostrarProductos(prodCafe);
+    mostrarProductos();
 
     if (localStorage.getItem("carrito")) {
         carritoStorage = JSON.parse(localStorage.getItem("carrito"))
