@@ -6,7 +6,7 @@ export const getData = async () => {
 
         return prodCafe;
     } catch (error) {
-        // console.log('Hubo un error', error)
+        // console.log('error catch', error)
     };
 }
 
